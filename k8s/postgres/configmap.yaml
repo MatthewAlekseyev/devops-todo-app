@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: 
+  name: todo-config
+  namespace: todo-ns
+  labels:
+    app.kubernetes.io/name: todo-app
+    app.kubernetes.io/part-of: devops-todo-app
+data:
+  DB_NAME: "todo_db"
+  DB_HOST: "db"
+    
